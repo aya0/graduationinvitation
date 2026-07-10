@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NEURO LENS // Diagnostic AI — Graduation Presentation</title>
+<title>NEURO LENS // عرض التخرج</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Rajdhani:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -25,6 +25,7 @@
 *{box-sizing:border-box;}
 html,body{margin:0;padding:0;height:100%;background:var(--bg);color:var(--text);
   font-family:'Rajdhani',sans-serif;overflow-x:hidden;}
+body{direction:rtl;}
 ::selection{background:var(--cyan);color:#031014;}
 
 /* ============ BACKDROP ============ */
@@ -434,7 +435,7 @@ html,body{margin:0;padding:0;height:100%;background:var(--bg);color:var(--text);
 .team-item{
   border:1px solid var(--line);border-radius:4px;
   padding:14px 12px;
-  text-align:left;
+  text-align:right;
   background:rgba(52,229,255,.02);
 }
 .team-item .name{font-family:'Rajdhani',sans-serif;font-weight:600;font-size:16px;color:var(--text);}
@@ -500,9 +501,9 @@ html,body{margin:0;padding:0;height:100%;background:var(--bg);color:var(--text);
 <div class="vignette-tech"></div>
 
 <div class="hud-bar">
-  <div class="brand"><span class="pulse-dot"></span>NEURO LENS // DIAGNOSTIC AI</div>
+  <div class="brand"><span class="pulse-dot"></span>NEURO LENS // الذكاء التشخيصي</div>
   <div class="status-cluster">
-    <span class="online">● SYSTEM ONLINE</span>
+    <span class="online">● النظام متصل</span>
     <span id="clock">00:00:00</span>
   </div>
 </div>
@@ -511,21 +512,21 @@ html,body{margin:0;padding:0;height:100%;background:var(--bg);color:var(--text);
 <div class="hud-corner bl"></div>
 <div class="hud-corner br"></div>
 
-<button class="sound-toggle" id="soundToggle"><span class="dot"></span><span id="soundLabel">Enable Audio</span></button>
+<button class="sound-toggle" id="soundToggle"><span class="dot"></span><span id="soundLabel">تفعيل الصوت</span></button>
 
 <div class="stage" id="mainStage">
-  <div class="eyebrow">GRADUATION PROJECT // PUBLIC PRESENTATION PROTOCOL</div>
+  <div class="eyebrow">مشروع التخرج // بروتوكول العرض العام</div>
 
   <div class="brain-wrap" id="brainWrap">
     <div class="readout-col left" id="readoutLeft">
-      <div class="readout-item"><div class="k">REGION</div><div class="v" id="rl1">— — —</div></div>
-      <div class="readout-item"><div class="k">MODEL CONFIDENCE</div><div class="v" id="rl2">— — —</div></div>
-      <div class="readout-item"><div class="k">SCAN TYPE</div><div class="v" id="rl3">— — —</div></div>
+      <div class="readout-item"><div class="k">المنطقة</div><div class="v" id="rl1">— — —</div></div>
+      <div class="readout-item"><div class="k">ثقة النموذج</div><div class="v" id="rl2">— — —</div></div>
+      <div class="readout-item"><div class="k">نوع المسح</div><div class="v" id="rl3">— — —</div></div>
     </div>
     <div class="readout-col right" id="readoutRight">
-      <div class="readout-item"><div class="k">CLASSIFIER</div><div class="v" id="rr1">— — —</div></div>
-      <div class="readout-item"><div class="k">STATUS</div><div class="v" id="rr2">— — —</div></div>
-      <div class="readout-item"><div class="k">CASE ID</div><div class="v" id="rr3">— — —</div></div>
+      <div class="readout-item"><div class="k">المصنِّف</div><div class="v" id="rr1">— — —</div></div>
+      <div class="readout-item"><div class="k">الحالة</div><div class="v" id="rr2">— — —</div></div>
+      <div class="readout-item"><div class="k">رقم الحالة</div><div class="v" id="rr3">— — —</div></div>
     </div>
 
     <div class="ring r1"></div>
@@ -540,65 +541,65 @@ html,body{margin:0;padding:0;height:100%;background:var(--bg);color:var(--text);
     <div class="scan-line" id="scanLine"></div>
 
     <div class="progress-track" id="progressTrack"><div class="progress-fill" id="progressFill"></div></div>
-    <div class="progress-hud" id="progressHud"><span id="progressLabel">ANALYZING...</span><span id="progressPct">0%</span></div>
+    <div class="progress-hud" id="progressHud"><span id="progressLabel">جارٍ التحليل...</span><span id="progressPct">0%</span></div>
   </div>
 
   <div class="title-block">
     <h1 class="glitch-title">NEURO <span>LENS</span></h1>
-    <div class="title-sub">MACHINE DETECTION FOR <b>BRAIN HEMORRHAGE</b> &amp; <b>GLIOMA TUMOR</b></div>
+    <div class="title-sub">الكشف الآلي عن <b>نزيف الدماغ</b> و<b>ورم الغليوما</b></div>
   </div>
 
-  <button class="scan-btn" id="scanBtn">▶ INITIATE SCAN</button>
+  <button class="scan-btn" id="scanBtn">▶ بدء المسح</button>
 </div>
 
 <div class="report-overlay" id="reportOverlay">
   <div class="report-card">
     <div class="report-header">
-      <span>CASE_FILE // NEURO-LENS-2026</span>
-      <span class="badge"><span class="dot"></span>ACCESS AUTHORIZED</span>
+      <span>ملف الحالة // NEURO-LENS-2026</span>
+      <span class="badge"><span class="dot"></span>تم السماح بالدخول</span>
     </div>
     <div class="report-body">
 
       <div class="reveal" data-seq="0">
-        <div class="report-eyebrow">TRANSMISSION://INVITATION</div>
-        <h2 class="report-heading">You Are Cordially Invited</h2>
+        <div class="report-eyebrow">الإرسال://دعوة</div>
+        <h2 class="report-heading">نحن ندعوكم بكل سرور</h2>
         <div class="divider"></div>
       </div>
 
-      <p class="invite-copy reveal" data-seq="1">Esteemed guests — it is with great pleasure that we request the honour of your presence at the public presentation of our graduation project.</p>
-      <p class="invite-copy dim reveal" data-seq="2">Your attendance would mean a great deal to us as we present the culmination of months of research, model training, and clinical-image analysis.</p>
+      <p class="invite-copy reveal" data-seq="1">أيها الضيوف الكرام، يسعدنا كثيرًا أن نطلب شرف حضوركم العرضَ العام لمشروع تخرجنا.</p>
+      <p class="invite-copy dim reveal" data-seq="2">إن حضوركم سيعني لنا الكثير ونحن نعرض حصيلة أشهر من البحث وتدريب النموذج وتحليل الصور الطبية.</p>
 
       <div class="reveal" data-seq="3">
-        <div class="section-label">Project Under Review</div>
+        <div class="section-label">المشروع قيد العرض</div>
         <div class="project-card">
-          <div class="project-title">Neuro Lens</div>
-          <div class="project-sub">MACHINE DETECTION FOR BRAIN HEMORRHAGE AND GLIOMA TUMOR</div>
+          <div class="project-title">NEURO LENS</div>
+          <div class="project-sub">الكشف الآلي عن نزيف الدماغ وورم الغليوما</div>
         </div>
       </div>
 
       <div class="reveal" data-seq="4">
-        <div class="section-label">Development Team</div>
+        <div class="section-label">فريق التطوير</div>
         <div class="team-grid">
-          <div class="team-item"><div class="name">Aya Abd-alkarim</div><div class="id">ID 1220020</div></div>
-          <div class="team-item"><div class="name">Mohammad Hmidat</div><div class="id">ID 1220772</div></div>
-          <div class="team-item"><div class="name">Moayyad Maraaba</div><div class="id">ID 1220887</div></div>
+          <div class="team-item"><div class="name">Aya Abd-alkarim</div><div class="id">الرقم 1220020</div></div>
+          <div class="team-item"><div class="name">Mohammad Hmidat</div><div class="id">الرقم 1220772</div></div>
+          <div class="team-item"><div class="name">Moayyad Maraaba</div><div class="id">الرقم 1220887</div></div>
         </div>
       </div>
 
       <div class="reveal" data-seq="5">
         <div class="hud-tiles">
-          <div class="hud-tile"><div class="k">LOCATION</div><div class="v">Bamiah</div></div>
-          <div class="hud-tile"><div class="k">TIME</div><div class="v">10:45 AM</div></div>
+          <div class="hud-tile"><div class="k">المكان</div><div class="v">Bamiah</div></div>
+          <div class="hud-tile"><div class="k">الوقت</div><div class="v">10:45 صباحًا</div></div>
         </div>
       </div>
 
       <div class="closing-block reveal" data-seq="6">
-        <p class="invite-copy">We look forward to welcoming you, and hope your journey to join us is a pleasant one.</p>
-        <div class="signoff">END OF TRANSMISSION<b>THE GRADUATING SCHOLARS</b></div>
-        <div class="access-granted"><span class="dot"></span>PRESENTATION ACCESS: GRANTED</div>
+        <p class="invite-copy">نتطلع إلى استقبالكم، ونتمنى أن تكون رحلتكم للحضور ممتعة وميسرة.</p>
+        <div class="signoff">نهاية الإرسال<b>THE GRADUATING SCHOLARS</b></div>
+        <div class="access-granted"><span class="dot"></span>تم منح الوصول إلى العرض</div>
       </div>
 
-      <a class="return-link reveal" data-seq="7" id="returnLink">‹ RETURN TO SCANNER</a>
+      <a class="return-link reveal" data-seq="7" id="returnLink">‹ العودة إلى الماسح</a>
     </div>
   </div>
 </div>
@@ -614,12 +615,12 @@ html,body{margin:0;padding:0;height:100%;background:var(--bg);color:var(--text);
 
   /* ---------- Boot sequence ---------- */
   const bootLines = [
-    "NEURO LENS AI DIAGNOSTIC SYSTEM  v2.4.1",
-    "INITIALIZING DIAGNOSTIC CORE...",
-    "LOADING NEURAL PATHWAYS...........OK",
-    "CALIBRATING IMAGING SENSORS.......OK",
-    "ESTABLISHING SECURE CHANNEL.......OK",
-    "SYSTEM READY."
+    "NEURO LENS نظام التشخيص الذكي  v2.4.1",
+    "جارٍ تهيئة النواة التشخيصية...",
+    "جارٍ تحميل المسارات العصبية...........تم",
+    "جارٍ معايرة حساسات التصوير.......تم",
+    "جارٍ إنشاء قناة آمنة.......تم",
+    "النظام جاهز."
   ];
   const bootBox = document.getElementById('bootBox');
   let li = 0;
@@ -740,8 +741,8 @@ html,body{margin:0;padding:0;height:100%;background:var(--bg);color:var(--text);
   soundToggle.addEventListener('click', ()=>{
     enabled=!enabled;
     soundToggle.classList.toggle('on', enabled);
-    if(enabled){ startAmbience(); beep(700,.15,.05); soundLabel.textContent='Audio Online'; }
-    else { stopAmbience(); soundLabel.textContent='Enable Audio'; }
+    if(enabled){ startAmbience(); beep(700,.15,.05); soundLabel.textContent='الصوت متصل'; }
+    else { stopAmbience(); soundLabel.textContent='تفعيل الصوت'; }
   });
 
   /* ---------- Scan sequence ---------- */
@@ -757,14 +758,14 @@ html,body{margin:0;padding:0;height:100%;background:var(--bg);color:var(--text);
   const reportOverlay = document.getElementById('reportOverlay');
   const returnLink = document.getElementById('returnLink');
 
-  const regions = ["FRONTAL LOBE","TEMPORAL LOBE","PARIETAL LOBE","OCCIPITAL LOBE","CEREBELLUM"];
+  const regions = ["الفص الجبهي","الفص الصدغي","الفص الجداري","الفص القذالي","المخيخ"];
   let scanning = false;
 
   scanBtn.addEventListener('click', ()=>{
     if(scanning) return;
     scanning = true;
     scanBtn.classList.add('busy');
-    scanBtn.textContent = '◉ SCANNING...';
+    scanBtn.textContent = '◉ جارٍ المسح...';
     if(enabled) sweepTone();
 
     scanLine.classList.add('active');
@@ -774,7 +775,7 @@ html,body{margin:0;padding:0;height:100%;background:var(--bg);color:var(--text);
     readoutRight.classList.add('show');
 
     document.getElementById('rl1').textContent = regions[Math.floor(Math.random()*regions.length)];
-    document.getElementById('rl3').textContent = "MRI / CT COMPOSITE";
+    document.getElementById('rl3').textContent = "تصوير MRI / CT";
     document.getElementById('rr1').textContent = "CNN + U-NET";
     document.getElementById('rr3').textContent = "#NL-"+Math.floor(1000+Math.random()*8999);
 
@@ -785,7 +786,7 @@ html,body{margin:0;padding:0;height:100%;background:var(--bg);color:var(--text);
         p=100;
         clearInterval(iv);
         document.getElementById('rl2').textContent = "98.6%";
-        document.getElementById('rr2').textContent = "ANALYSIS COMPLETE";
+        document.getElementById('rr2').textContent = "اكتمل التحليل";
         if(enabled) beep(880,.18,.06);
         setTimeout(()=>{
           mainStage.classList.add('dim');
@@ -816,7 +817,7 @@ html,body{margin:0;padding:0;height:100%;background:var(--bg);color:var(--text);
     setTimeout(()=>{
       mainStage.classList.remove('dim');
       scanBtn.classList.remove('busy');
-      scanBtn.textContent = '▶ INITIATE SCAN';
+      scanBtn.textContent = '▶ بدء المسح';
       scanLine.classList.remove('active');
       progressTrack.classList.remove('show');
       progressHud.classList.remove('show');
